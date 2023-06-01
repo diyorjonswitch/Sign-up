@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Arial Black';
+    overflow: hidden;
+}
+.Sign{
+    position: relative;
+    overflow: hidden;
+    width: 1152px;
+    height: 700px;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    margin-top: 20px;
+    /* transform: scale(0);  */
+    transition:transform .5s, height .2s ease;
+
+}
+.header{
+    display: flex;
+    transition: .2s;
+}
+
+
+.Sign .header.sign-in{
+    transition: .18s;
+    transform: translateX(0);
+}
+.Sign.active .header.sign-in{
+    transition: none;
+    transform: translateX(-400px);
+}
+.Sign .header.sign-in{
+    position: absolute;
+    transition: none;
+    transform: translateX(1700px);
+}
+.Sign.active .header.sign-in{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.left {
+    flex: 1;
+    /* border:  1px solid; */
+    background: rgba(201, 172, 140, 0.93);
+    align-items: center;
+    padding: 100px 8px 100px 38px;
+}
+
+.right {
+    flex: 1;
+    background: #FFFFFF;
+    /* border: 1px solid; */
+}
+
+.all {
+    flex-wrap: wrap;
+    display: grid;
+    gap: 20px;
+    padding: 75px;
+}
+
+.all input {
+    width: 330px;
+    height: 46px;
+    box-sizing: border-box;
+    /* White Base */
+    background: #FFFFFF;
+    /* Gray / 30 */
+    border: 1px solid #B4B4BB;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 15px;
+
+}
+
+.all button {
+    width: 328px;
+    height: 46px;
+    background: #152540;
+    border-radius: 99px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 200% */
+    align-items: center;
+    text-align: center;
+    /* White Base */
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.all h2 {
+    font-family: 'Arial Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 51px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.all p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #000000;
+
+
+}
+.signin{
+    padding-top: 75px;
+}
+.all a{
+    text-decoration: none;
+    color: #549FF9;
+}
